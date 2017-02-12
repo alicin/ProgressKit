@@ -30,7 +30,7 @@ open class CircularProgressView: DeterminateAnimation {
 
     override func notifyViewRedesigned() {
         super.notifyViewRedesigned()
-        backgroundCircle.lineWidth = self.strokeWidth / 2
+        backgroundCircle.lineWidth = 0.0
         progressLayer.lineWidth = strokeWidth
         percentLabelLayer.isHidden = !showPercent
 
