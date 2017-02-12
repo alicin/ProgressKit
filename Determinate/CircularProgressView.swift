@@ -56,7 +56,7 @@ open class CircularProgressView: DeterminateAnimation {
     override func configureLayers() {
         super.configureLayers()
         let rect = self.bounds
-        let radius:CGFloat = 1.0
+        let radius = (rect.width / 2) * 0.75
         let strokeScalingFactor = CGFloat(0.05)
         
 
